@@ -1,0 +1,237 @@
+body {
+  min-width: 1250px;
+  max-width: 1250px;
+  margin: 75px 100px;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+  width: 50%;
+}
+
+#mainLogo {
+  max-width: 100%;
+  height: auto;
+}
+
+.homeIcon {
+  width: 50%;
+}
+
+#topnav {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+#topnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+  border: 1pt solid #006699;
+}
+
+#navlist li {
+  float: left;
+}
+
+#navlist li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+#navlist li a:hover {
+  background-color: #006699;
+}
+
+/* Table Home */
+
+#homeTable {
+  width: 100%;
+}
+
+#homeTable ul {
+  margin: 5px 0px;
+}
+
+/* #homeTable td{
+  border: 2pt solid black;
+} */
+
+#columnOne, #columnThree {
+  font-size: 14pt;
+}
+
+#middleCol {
+  border-left: 2pt solid gray;
+  border-right: 2pt solid gray;
+}
+
+#tableTitle {
+  background-color: grey;
+  font-size: 20pt;
+  color: white;
+  text-align: center;
+}
+
+#tableTitle td {
+  padding: 5pt;
+}
+
+#dataRow td {
+  padding: 10pt;
+}
+
+#calcContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0px;
+  background-color: rgb(236, 236, 236);
+  padding: 5px 0px;
+}
+
+#calcContainer div {
+  padding: 3px 0px;
+}
+
+#imgPage2 {
+  max-width: 75%;
+  height: auto;
+}
+
+#containerPage2 {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+    color: #006699;
+    font-family: Verdana;
+    font-size: 25pt;
+    border-bottom: 1pt solid black;
+    margin: 20px 0px;
+    padding-bottom: 5px;
+}
+
+#contentPage3 p {
+  margin: 25pt 5pt;
+  font-size: 15pt;
+}
+
+#imgHypeCycle {
+  max-width: 85%;
+  margin-left: 7.5%;
+  height: auto;
+  margin-top: 50px;
+}
+
+/* Page 5 */
+
+#flexContainer {
+  display:flex;
+  margin-top: 20px;
+}
+
+#leftCol {
+  width: 40%;
+  margin-right: 10%;
+  font-family: Verdana;
+}
+
+#leftCol h4 {
+  padding-bottom: 10px;
+  border-bottom: 2pt solid #006699;
+}
+
+#leftCol h3 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#rightCol {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+#imgMagicQ {
+  width: 90%;
+  height: auto;
+  box-shadow: 10px 10px 5px grey;
+}
+
+#flexContainerPage6 {
+  display: flex;
+}
+
+#listPage6 {
+  max-width: 75%;
+}
+
+#listPage6 h3 {
+  margin-bottom: 0px;
+  font-size: 22px;
+}
+
+#mainList {
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+#mainList li {
+  margin: 5px 0px;
+  line-height: 1.2;
+}
+
+.indentList {
+  font-size: 17px;
+}
+
+#imgContainerPage6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 25%;
+}
+
+#imgExec {
+  max-width: 90%;
+  height: auto;
+}
+
+#logoPage6 {
+  max-width: 90%;
+  height: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  border: none;
+  border-bottom: 2pt solid black;
+  width: 100px;
+  background-color: rgb(236, 236, 236);
+}
+
+#imgBudget {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 30px;
+}

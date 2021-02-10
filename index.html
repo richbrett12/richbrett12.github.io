@@ -1,1 +1,205 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function show(shown, hidden, hidden2, hidden3, hidden4, hidden5, hidden6) {
+          document.getElementById(shown).style.display='block';
+          document.getElementById(hidden).style.display='none';
+          document.getElementById(hidden2).style.display='none';
+          document.getElementById(hidden3).style.display='none';
+          document.getElementById(hidden4).style.display='none';
+          document.getElementById(hidden5).style.display='none';
+          document.getElementById(hidden6).style.display='none';
+          return false;
+        }
+    </script>
+</head>
+<body>
+<div id="header">
+    <div id="logo">
+        <img id="mainLogo" src="images/Picture1.png">
+    </div>
+    <div id="topnav">
+        <ul id="navlist">
+            <li><a href="#" onclick="return show('page1','page2', 'page3', 'page4', 'page5', 'page6', 'page7');">Home</a></li>
+            <li><a href="#" onclick="return show('page3','page1', 'page2', 'page4', 'page5', 'page6', 'page7');">Testimonials</a></li>
+            <li><a href="#" onclick="return show('page2','page1', 'page3', 'page4', 'page5', 'page6', 'page7');">Pricing</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="page1">
+    <table id="homeTable">
+        <tr>
+          <th><img class="homeIcon" src="images/icon1_home.png"></th>
+          <th id="middleCol"><img class="homeIcon" src="images/icon2_home.png"></th>
+          <th><img class="homeIcon" src="images/icon3_home.png"></th>
+        </tr>
+        <tr id="tableTitle">
+          <td>Unbiased Research</td>
+          <td id="middleColH">Cost Optimization Tools</td>
+          <td>Executive Partner</td>
+        </tr>
+        <tr id="dataRow">
+          <td id="columnOne">135,000 targeted, unbiased research reports on <a href="https://www.Gartner.com" target="_blank" rel="noopener noreferrer">Gartner.com</a><br/><br/>
+            Proprietary methodologies:
+            <ul>
+                <li><a href="#" onclick="return show('page5','page1', 'page2', 'page3', 'page4', 'page6', 'page7');">Magic Quadrant</a></li>
+                <li><a href="#" onclick="return show('page4','page1', 'page2', 'page3', 'page5', 'page6', 'page7');">Hype Cycle</a></li>
+                <li>And Several More</li>
+            </ul>
+          </td>
+          <td id="middleCol">ITBudget reports
+              <ul>
+                  <li>
+                      <a href="" onclick="return show('page7','page1', 'page2', 'page3', 'page4', 'page5', 'page6');">Compares spending to best-in-class industry averages</a>
+                  </li>
+              </ul>
+              Contract Review Service
+              <ul>
+                  <li>
+                      Find an average of 10-20% savings in approximately 3 out of every 4 contracts
+                  </li>
+              </ul>
+              <div id="calcContainer">
+                  <div>
+                    <label for="annVal">If annual value of contract is:</label>
+                    $ <input type="number" id="annVal" onkeyup="calculate()">
+                  </div>
+                  <div>
+                    <label for="savings">Then typical savings is:</label>
+                    $ <input type="number" id="savings" readonly>
+                  </div>
+                  <script>
+                      function calculate() {
+                        var x = document.getElementById("annVal").value;
+
+                        document.getElementById("savings").value = x * .15 * .75;
+                      }
+                    
+                  </script>
+              </div>
+          </td>
+          <td id="columnThree">Access to your <a href="" onclick="return show('page6','page1', 'page2', 'page3', 'page4', 'page5', 'page7');">seasoned IT Executive</a> in your industry including
+              <ul>
+                <li>Annual onsite workshops (COVID permitting)</li>
+                <li>Monthly individualized meetings</li>
+              </ul>
+          </td>
+        </tr>
+      </table>
+</div>
+
+<div id="page2" style="display: none">
+<h2 id="titlePage2">Service Agreement</h2>
+<div id="containerPage2">
+    <img id="imgPage2" src="images/main_page2.png">
+</div>
+</div>
+
+<div id="page3" style="display: none">
+<h2 id="titlePage3">Client Testimonials</h2>
+<div id="contentPage3">
+    <p>
+        <i>"Without Gartner, we'd likely find ourselves perpetually overspending on technology and taking more time to complete technology-enabled business initiatives."</i>
+        <br/><b>Megan Butler, CIO, Pink Distributors</b>
+    </p>
+    <p>
+        <i>“Our renegotiation of vendor agreements yielded savings to our company worth $28.6 million over the term of a five-year agreement, as well as other valuable terms that greatly enhanced the contract we already had in place.”</i>
+        <br/><b>Greg Rich, CIO,  Marriott Hotels</b>
+    </p>
+    <p>
+        <i>“The Gartner benchmark validated that we were receiving competitive pricing for the service levels we expected. The benchmark was useful in paving the way for our contract extension.”</i>
+        <br/><b>Michael Gold, CIO, Nationwide Children’s Hospital</b>
+    </p>
+    <p>
+        <i>“I value opportunities to hear about cross-industry SAP implementations. Gartner Executive Programs provides those opportunities.”</i>
+        <br/><b>Mark Kelly, CIO, Marathon Petroleum</b>
+    </p>
+</div>
+</div>
+
+<div id="page4" style="display: none">
+    <img id="imgHypeCycle" src="images/main_hypecycle.png">
+</div>
+
+<div id="page5" style="display: none">
+
+
+<div id="flexContainer">
+<div id="leftCol">
+    <h1>Magic Quadrant</h1>
+    <h4>(Example for clients)</h4>
+    <h3><i>Niche Players</i></h3>
+    <ul>
+        <li>Successful in small segments / or unfocused on innovation</li>
+    </ul>
+    <h3><i>Challengers</i></h3>
+    <ul>
+        <li>Competitive today but not well positioned for the future market</li>
+    </ul>
+    <h3><i>Visionaries</i></h3>
+    <ul>
+        <li>Uncompetitive today but positioned for the future market</li>
+    </ul>
+    <h3><i>Leaders</i></h3>
+    <ul>
+        <li>Competitive today and well positioned for the future market</li>
+    </ul>
+</div>
+
+<div id="rightCol">
+    <img id="imgMagicQ" src="images/main_magicQ.png">
+</div>
+
+</div>
+
+
+</div>
+
+<div id="page6" style="display: none">
+
+<h2>Executive Partner</h2>
+
+<div id="flexContainerPage6">
+
+    <div id="listPage6">
+        <h3>Jane Moran</h3>
+        <ul id="mainList">
+            <li>Jane is a Gartner Executive Partner. Previously, Ms. Moran’sresponsibilities included security, legacy modernization, organizational design, release management, capacity planning,business/technology integration, SOA, SDLC, maturity modeling and compliance</li>
+            <li>29 years in the IT industry</li>
+            <li>Professional Background</li>
+            <ul class="indentList">
+                <li>Yellow Distributors, Global CIO, 5 years</li>
+                <li>Green Distributors, Senior Technology Manager, 11 years</li>
+                <li>Synapse Technology, Senior Vice President, 3 years</li>
+            </ul>
+            <li>Industry Awards/Accolades</li>
+            <ul class="indentList">
+                <li>Chairs the Advisory Board of Women in Technology International</li>
+                <li>Joint patent holder related to advanced mathematical modeling used for predictive analysis of technology change</li>
+            </ul>
+            <li>Education</li>
+            <ul class="indentList">
+                <li>BA, Bowling Green State University, Bowling Green, OH</li>
+                <li>MBA, Emory School of Business, Atlanta, GA</li>
+            </ul>
+        </ul>
+    </div>
+
+    <div id="imgContainerPage6">
+        <img id="imgExec" src="images/execJane.png">
+
+        <img id="logoPage6" src="images/gartnerLogo.png">
+    </div>
+
+</div>
+</div>
+
+<div id="page7" style="display: none">
+    <img id="imgBudget" src="images/budget.png">
+</div>
+
+</body>
+</html>
