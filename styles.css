@@ -171,6 +171,8 @@ h2 {
   width: 90%;
   height: auto;
   box-shadow: 10px 10px 5px grey;
+  border-bottom: 1pt solid #006699;
+  border-right: 1pt solid #006699;
 }
 
 #flexContainerPage6 {
